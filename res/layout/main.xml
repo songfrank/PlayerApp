@@ -1,23 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" >
 
-    <Button
-        android:id="@+id/bStart"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Start Fluid" 
-        android:onClick="startPlayer"
-        />
 
+
+    
     <Button
-        android:id="@+id/bStop"
+        android:id="@+id/bStartInstrumental"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Stop Fluid" 
+        android:text="Start Fluid Instrumental" 
+        android:onClick="startPlayerInstrumental"
+        android:layout_alignParentTop="true"
+        />
+    
+    <Button
+        android:id="@+id/bStartVocal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Fluid Vocal" 
+        android:onClick="startPlayerVocal"
+        android:layout_below="@id/bStartInstrumental"
+        
+        />
+    
+            <Button
+        android:id="@+id/bStopPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Stream" 
         android:onClick="stopPlayer"
+        android:layout_alignParentBottom="true"
+        
         />
 
-</LinearLayout>
+
+
+    <!-- 
+        <Button
+        android:id="@+id/bhomelink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fluid Home for News" 
+        android:onClick="homeLink"
+        android:layout_alignParentBottom="true"/>
+ -->
+
+
+
+</RelativeLayout>

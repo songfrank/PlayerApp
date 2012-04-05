@@ -37,6 +37,7 @@ public class IcyStreamMeta {
 			return "";
  
 		String streamTitle = data.get("StreamTitle");
+		if(streamTitle.isEmpty()) { streamTitle = "err"; } // attempting to route out String Index out of Bounds Error
 		String title = streamTitle.substring(0, streamTitle.indexOf("-"));
 		return title.trim();
 	}
@@ -54,6 +55,7 @@ public class IcyStreamMeta {
 			return "";
  
 		String streamTitle = data.get("StreamTitle");
+		if(streamTitle.isEmpty()) { streamTitle = "err"; } // attempting to route out String Index out of Bounds Error
 		String artist = streamTitle.substring(streamTitle.indexOf("-")+1);
 		return artist.trim();
 	}
