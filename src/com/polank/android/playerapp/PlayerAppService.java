@@ -70,18 +70,18 @@ public class PlayerAppService extends Service {
 		
 		if(intent.getFlags() == 1) {
 			try {
-				url = new URL("http://usa4-vn.mixstream.net:9270");
-				tickerText = "Fluid Instrumental";
-				contentTitle = "Fluid Instrumental"; 
+				url = new URL("http://radiostream.science360.org:4200/live");
+				tickerText = "Science360";
+				contentTitle = "Science360"; 
 			} catch (MalformedURLException e) {
 				e.printStackTrace();
 			}
 		}
 		else if (intent.getFlags() == 2) {
 			try {
-				url = new URL("http://usa7-vn.mixstream.net:8132");
-				tickerText = "Fluid Vocal";              
-				contentTitle = "Fluid Vocal";  
+				url = new URL("http://kexp-mp3-1.cac.washington.edu:8000/");
+				tickerText = "kexp";              
+				contentTitle = "kexp";  
 			} catch (MalformedURLException e) {
 				e.printStackTrace();
 			}

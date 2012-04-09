@@ -36,7 +36,7 @@ public class PlayerAppActivity extends Activity {
                  dialog.cancel();
                  dialog.dismiss();
              }
-        }, 5000);
+        }, 10000);
 
     }
     

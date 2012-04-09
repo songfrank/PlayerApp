@@ -11,7 +11,7 @@
         android:id="@+id/bStartInstrumental"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Start Fluid Instrumental" 
+        android:text="@string/science" 
         android:onClick="startPlayerInstrumental"
         android:layout_alignParentTop="true"
         />
@@ -20,7 +20,7 @@
         android:id="@+id/bStartVocal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Start Fluid Vocal" 
+        android:text="@string/tunes" 
         android:onClick="startPlayerVocal"
         android:layout_below="@id/bStartInstrumental"
         
@@ -30,9 +30,9 @@
         android:id="@+id/bStopPlayer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Stop Stream" 
+        android:text="@string/stop" 
         android:onClick="stopPlayer"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@id/bStartVocal"
         
         />
 
